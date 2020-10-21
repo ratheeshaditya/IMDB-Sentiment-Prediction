@@ -1,0 +1,12 @@
+.title{
+    align-items: center;
+    display:flex;
+    background: radial-gradient(#fff,#FFD400);
+    
+}
+.title .text{
+    padding-left: 20px;
+}
+body{
+    font-family:'Poppins',sans-serif;
+}
