@@ -1,0 +1,42 @@
+{% load static %}
+<html>
+    <head>
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>
+                IMDB Sentiment Prediction
+            </title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="{% static 'style.css' %}">
+        </head>
+    </head>
+    <body>
+        <div class="title">
+            <div class="logo">
+                <img src="{% static 'imdb.png' %}" width=100px>
+            </div>
+            <div class="text">
+                <h3>Movie sentiment prediction</h3>
+            </div>
+        </div>
+
+        <div class="sentiment">
+            <h3>Enter your review</h3>
+            <form action="get_sentiment" method="POST">
+                {% csrf_token %}
+                <textarea rows = "3" cols = "60" name = "review"></textarea>
+                 <br>
+                 <br>
+                 <input type="submit" class="button" value="Submit Review">
+            
+            </form>
+            {% block content %}
+            <h3>Sentiment : {{sentiment}} </h3>
+            {% endblock %}
+        </div>
+
+
+    </body>
+</html>
