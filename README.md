@@ -8,7 +8,7 @@ Instructions
 
 - To run server : python manage.py runserver
 
-- In the model folder there is only 'tokenizer' file , the use the weights : https://gofile.io/d/lg06CH and store it in the model folder itself.
+- In the model folder there is only 'tokenizer' file , To use the weights : https://gofile.io/d/lg06CH and store it in the model folder itself.
 
 - The main 'views.py' is in the sentiment folder where all the text preprocessing and prediction of the sentiment is done.
 
