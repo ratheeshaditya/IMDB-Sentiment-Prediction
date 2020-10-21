@@ -6,7 +6,7 @@ The notebook for the creation of the model can be found here : https://github.co
 Instructions 
 - Run 'python manage.py collectstatic' on the first run
 
-To run server : python manage.py runserver
+- To run server : python manage.py runserver
 
 <h2>Positive review</h2>
 <img src="https://user-images.githubusercontent.com/15837342/96734934-b3bd2500-13c3-11eb-8123-5cb2a04e2298.gif" height="500" width="500">
